@@ -50,7 +50,9 @@ struct MyStruct(field1: Type1, field2: Type2)
 ```
 As an example, defining the `A` and `B` structs as above would be done as follows
 ```
-
+struct A(x: i32, y: f32)
+struft B(a: A, z: i64) 
+```
 
 ## Casting
 
@@ -69,6 +71,6 @@ struct B (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MTg1MDQ3Niw3MzQ1NTY0MzIsLTE1ND
+eyJoaXN0b3J5IjpbMTg5MjYyNTAzMSw3MzQ1NTY0MzIsLTE1ND
 UzNzAxNjldfQ==
 -->
