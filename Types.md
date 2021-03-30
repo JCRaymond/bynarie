@@ -48,7 +48,9 @@ Whenever the number of fields is small, it may be preferable to use the single l
 ```
 struct MyStruct(field1: Type1, field2: Type2)
 ```
-As an example, 
+As an example, defining the `A` and `B` structs as above would be done as follows
+```
+
 
 ## Casting
 
@@ -67,5 +69,6 @@ struct B (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM0NTU2NDMyLC0xNTQ1MzcwMTY5XX0=
+eyJoaXN0b3J5IjpbLTM0MTg1MDQ3Niw3MzQ1NTY0MzIsLTE1ND
+UzNzAxNjldfQ==
 -->
