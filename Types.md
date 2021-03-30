@@ -34,9 +34,8 @@ struct B {
 with the exception of the specification that the first 8 bytes is explicitly treated as an `A` type. Note that this paradigm allows only one of the two: accessing values that would be in the `A` type directly (as is the case with the definition of `B` with `x`, `y`, and `z`), or having some fields clustered together in a sub-struct. In reality, if you have a legitimate reason to have a supertype with content, there's no reason that this data should not be clustered together to indicate it belongs to the supertype. As a result, Bynarie only uses composition to create complex data structures.
 
 ### Bynarie Struct Syntax (WIP)
-```c
-struct MyStruct {
-	Type1 field1
+```
+MyStruct = struct(Type1 field1
 	Type2 field2
 }
 ```
@@ -58,5 +57,6 @@ struct B (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTIyOTU4OCwtMTU0NTM3MDE2OV19
+eyJoaXN0b3J5IjpbLTEzODk0MDA2ODUsLTE1NDUzNzAxNjldfQ
+==
 -->
