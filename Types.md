@@ -44,14 +44,27 @@ struct MyStruct(
 	.
 )
 ```
-Whenever the number of fields is small, it may be preferable to use the single line syntax:
+Whenever the number of fields is small, it may be preferable to use the single line syntax, in which case the `field: Type` must be comma separated.
 ```
 struct MyStruct(field1: Type1, field2: Type2)
 ```
 As an example, defining the `A` and `B` structs as above would be done as follows
 ```
 struct A(x: i32, y: f32)
-struft B(a: A, z: i64) 
+
+struct B(a: A, z: i64)
+```
+or, if the longer hand form is used,
+```
+struct A(
+	x: i32
+	y: f32
+)
+
+struct B(
+	a: A
+	z: i64
+)
 ```
 
 ## Casting
@@ -59,8 +72,8 @@ struft B(a: A, z: i64)
 With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like forcing composition in structs would remove the ability to do this, but in fact casting ability  follows directly from accessing members of a struct directly. With structs defined as follows,
 ```
 struct A (
-	i32 x
-	f32 y
+	x: i32
+	f32 y: f32
 )
 
 struct B (
@@ -71,6 +84,6 @@ struct B (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjYyNTAzMSw3MzQ1NTY0MzIsLTE1ND
-UzNzAxNjldfQ==
+eyJoaXN0b3J5IjpbMTc4ODU5MTIwNiwxODkyNjI1MDMxLDczND
+U1NjQzMiwtMTU0NTM3MDE2OV19
 -->
