@@ -39,9 +39,9 @@ struct MyStruct {
 }
 ```
 
-With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. 
+With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUzNzAxNjldfQ==
+eyJoaXN0b3J5IjpbMTMwMzIxNzc0MiwtMTU0NTM3MDE2OV19
 -->
