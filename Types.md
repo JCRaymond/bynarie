@@ -50,12 +50,13 @@ struct A {
 	f32 y
 }
 
-struct B {
-	
+struct B (
+	A super
+	i64 z
 }
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQyMDMxMywtMTU0NTM3MDE2OV19
+eyJoaXN0b3J5IjpbMTIzOTQ4OTE1MSwtMTU0NTM3MDE2OV19
 -->
