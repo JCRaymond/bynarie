@@ -81,10 +81,10 @@ struct B (
 	z: i64
 )
 ```
-then in order to "cast" a B type to an A type, just access `B.super`. Note that here, the word `super` is arbitrary, and is not in any way a reserved keyword. Now, it certainly 
+then in order to "cast" a B type to an A type, just access `B.super`. Note that here, the word `super` is arbitrary, and is not in any way a reserved keyword. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Mzc2MTgzOSwxNDExOTMyNzk3LDE4OT
-I2MjUwMzEsNzM0NTU2NDMyLC0xNTQ1MzcwMTY5XX0=
+eyJoaXN0b3J5IjpbNTIzNDc3ODY3LDE0MTE5MzI3OTcsMTg5Mj
+YyNTAzMSw3MzQ1NTY0MzIsLTE1NDUzNzAxNjldfQ==
 -->
