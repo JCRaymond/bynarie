@@ -43,10 +43,9 @@ struct MyStruct {
 
 ## Casting
 
-With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like forcing composition in structs would remove the ability to do this, but the only type 
+With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like forcing composition in structs would remove the ability to do this, but forcing composition requires the intelligent composition of data 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE3MjExNzQsLTE1NDUzNzAxNjldfQ
-==
+eyJoaXN0b3J5IjpbLTgxMTkxNDY1OCwtMTU0NTM3MDE2OV19
 -->
