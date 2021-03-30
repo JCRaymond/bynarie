@@ -35,9 +35,7 @@ with the exception of the specification that the first 8 bytes is explicitly tre
 
 ### Bynarie Struct Syntax (WIP)
 ```
-MyStruct = struct(Type1 field1
-	Type2 field2
-}
+struct MyStruct (Type1 field1, Type2 field2)
 ```
 
 ## Casting
@@ -57,6 +55,5 @@ struct B (
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODk0MDA2ODUsLTE1NDUzNzAxNjldfQ
-==
+eyJoaXN0b3J5IjpbOTgzMTA4NDU2LC0xNTQ1MzcwMTY5XX0=
 -->
