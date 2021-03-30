@@ -3,6 +3,8 @@
 
 Separate the notions of content and behavior.
 
+## No Content Type Hierarchy
+
 For content, the definition of structs behaves as the definition of concrete types. The structs may implement any number of traits, and structs may contain other structs, but there is no type hierarchy for structs. The reason for this is that content hierarchies are ultimately implemented as containment. For example with the following struct hierarchy in C++,
 ```c
 struct A {
@@ -31,7 +33,7 @@ struct B {
 ```
 with the exception of the specification that the first 8 bytes is explicitly treated as an `A` type. Note that this paradigm allows only one of the two: accessing values that would be in the `A` type directly (as is the case with the definition of `B` with `x`, `y`, and `z`), or having some fields clustered together in a sub-struct. In reality, if you have a legitimate reason to have a supertype with content, there's no reason that this data should not be clustered together to indicate it belongs to the supertype. As a result, Bynarie only uses composition to create complex data structures.
 
-### Bynarie Struct Syntax
+### Bynarie Struct Syntax (WIP)
 ```c
 struct MyStruct {
 	Type1 field1
@@ -39,9 +41,12 @@ struct MyStruct {
 }
 ```
 
-With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like 
+## Casting
+
+With a type hierarchy, a struct of type `B` can be "cast" into a struct of type `A`, which is possible by treating the size of the data in memory as being the size of `A` instead of the size of `B`. It may seem like forcing composition in structs would remove the ability to do this, but the only type 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzIxNzc0MiwtMTU0NTM3MDE2OV19
+eyJoaXN0b3J5IjpbLTE2MjE3MjExNzQsLTE1NDUzNzAxNjldfQ
+==
 -->
