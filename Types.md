@@ -73,17 +73,18 @@ With a type hierarchy, a struct of type `B` can be "cast" into a struct of type 
 ```
 struct A (
 	x: i32
-	f32 y: f32
+	y: f32
 )
 
 struct B (
-	A super
-	i64 z
+	super: A
+	z: i64
 )
 ```
+then in order to "cast" a B type to an A type, just access `B.super`. Note that here, the word `super` is arbitrary, and is not in any way a reserved keyword.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODU5MTIwNiwxODkyNjI1MDMxLDczND
+eyJoaXN0b3J5IjpbMTQxMTkzMjc5NywxODkyNjI1MDMxLDczND
 U1NjQzMiwtMTU0NTM3MDE2OV19
 -->
